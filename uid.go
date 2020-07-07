@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func HimanUid() string {
+func HumanUid() string {
 	r, _ := rand.Prime(rand.Reader, 64)
 	id := time.Now().UTC().Format("20060102150405.0000000")
 	id = strings.ReplaceAll(id, ".", "")
